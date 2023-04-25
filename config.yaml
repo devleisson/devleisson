@@ -1,4 +1,4 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://devleisson.github.io/devleisson/"
 languageCode: "en-us"
 title: "Devleisson website for personal portfolio and blog"
 theme: "hugo-profile"
