@@ -1,4 +1,4 @@
-baseURL: "https://devleisson.github.io/devleisson/"
+baseURL: "https://github.com/devleisson/devleisson.github.io.git/"
 languageCode: "en-us"
 title: "Devleisson website for personal portfolio and blog"
 theme: "hugo-profile"
