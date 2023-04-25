@@ -1,0 +1,243 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Devleisson website for personal portfolio and blog"
+theme: "hugo-profile"
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blog
+      weight: 1
+  
+
+params:
+  title: "Devleisson website for personal portfolio and blog"
+  description: This is my personal website for my portfolio and blog  
+  favicon: "/fav.png"
+
+  
+  useBootstrapCDN: false
+
+ 
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: true
+    defaultTheme: dark # dark or light
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+ 
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Devleisson - Website for personal portfolio and blog" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    menus:
+      disableAbout: false
+      disableMotivation: false
+      disableExperience: false
+      disableEducation: false
+      disablePortfolio: false
+      disableAchievements: true
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true    
+    intro: "Hello, my name is"
+    title: "Joonas."
+    subtitle: "I love to develop fun and entertaining games with modern methods and platforms"
+    content: "A passionate game and software developer."
+
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/laptop.jpg"
+    content: |-
+      I am a software developer with a passion for games and game industry. I have a background in automation industry, mainly PLC and HMI software development and automation project management.
+      Currently I study information technology and I specialize in game development.
+
+  
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "Unity"
+        - "Unreal Engine 5"
+        - "C#"
+        - "C++"
+        - "Siemens TIA Portal: PLC & HMI"        
+        - "Blueprints"        
+        
+ # Motivation
+  motivation:
+    enable: true
+    title: "Motivation to game industry"
+    image: "/images/gaming.jpg"
+    content: |-
+      I love solving problems, especially if they can be solved with a program I made. I also love video games, especially if they take me to a fantasy world inside my head.
+      After working for about five years in automation programming, I started looking for new challenges.
+      I noticed that I would like to focus more and more deeply on programming and I would like to program graphically nicer and more
+      entertaining environments than is possible in the automation industry. 
+      So I went to study information technology. 
+      After a few programming courses and an algorithm course, games started to interest me with programming in mind. 
+      I think game programming is the most interesting thing to program. After the first game programming course I was hooked, this is what I want to do as a profession one day.
+      Now I have studied the use of Unity and Unreal Engine and participated in Centria's game workshop. 
+      I will continue to accumulate my knowledge and skills about game industry until one day I work with games.
+       
+
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Automation designer and project manager"
+        company: "MJV-Automation Oy"
+        companyUrl: "https://mjvautomation.fi/en/"
+        date: "May 2016 - present"
+        featuredLink:
+          enable: false
+          #name: "View the project"
+          #url: "https://example.com"
+        content: "I currently work as an automation designer and project manager in industrial automation projects. Main tasks are PLC and HMI software delevelopment and project management.
+        I have experience in projects in Finland and abroad in the plywood industry and waste refining."
+
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:     
+      - title: "Bachelor of Engineering, Information technology"        
+        school:
+          name: "Centria University of Applied Sciences"
+          url: "https://net.centria.fi/en/"
+        date: "2020 - estimated degree completion 2024"        
+        content: |-
+          
+    
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+
+      - title: "Bachelor of Engineering, Mechanical and Production Engineering"        
+        school:
+          name: "Lahti University of Applied Sciences"
+          url: "https://www.lab.fi/en"
+        date: "2013 - 2017"        
+        content: |-
+         - I specialize in automation design.
+         
+    
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+    
+
+
+
+  # Achievements
+  achievements:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Google kickstart runner
+        content: I solved all problems with optimal solution.
+        url: https://example.com
+      - title: Facebook Hackathon Winner
+        content: Developed a product using Artificial Intelligence.
+      - title: Hugo Profile
+        content: Developed a theme and getting 1K+ downloads per month.
+        url: "https://github.com/gurusabarish/hugo-profile"
+      - title: Microsoft Imagine Runner
+        content: We are developed a product which can help others.
+      - title: Google Summer of Code
+        content: Contributed to a open source project.
+        url: https://example.com
+
+  # portfolio
+  portfolio:
+    enable: true
+    # title: "Custom Name"
+    items:
+  
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: My inbox is always open. If you have a question or just want to talk about games and game development, I’ll try my best to get back to you!
+    email: devleisson@gmail.com
+    btnName: Mail me
+
+
+  footer:
+    recentPosts:
+      path: "blog"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+  
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
